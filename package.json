@@ -1,0 +1,18 @@
+{
+    "name": "gitbook-plugin-sharing",
+    "description": "Sharing buttons in GitBooks website",
+    "main": "index.js",
+    "version": "0.0.0",
+    "engines": {
+        "gitbook": ">=2.4.0"
+    },
+    "homepage": "https://github.com/GitbookIO/plugin-sharing",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GitbookIO/plugin-sharing.git"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/GitbookIO/plugin-sharing/issues"
+    }
+}
