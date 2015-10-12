@@ -52,8 +52,8 @@ require(["gitbook", "lodash"], function(gitbook, _) {
 
 
 
-    gitbook.events.bind("start", function(config) {
-        var opts = _.defaults(_.get(config, 'pluginsConfig.sharing', {}), {
+    gitbook.events.bind("start", function(e, config) {
+        var opts = _.defaults(config.sharing, {
             "facebook": true,
             "twitter": true,
             "google": false,
@@ -102,5 +102,3 @@ require(["gitbook", "lodash"], function(gitbook, _) {
         });
     });
 });
-
-

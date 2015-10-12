@@ -3,6 +3,9 @@
     "description": "Sharing buttons in GitBooks website",
     "main": "index.js",
     "version": "1.0.0",
+    "dependencies": {
+        "lodash": "^3.10.1"
+    },
     "engines": {
         "gitbook": ">=2.4.0"
     },
