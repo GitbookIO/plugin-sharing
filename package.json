@@ -17,5 +17,45 @@
     "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/GitbookIO/plugin-sharing/issues"
+    },
+    "gitbook": {
+        "config": [
+            {
+                "key": "facebook",
+                "type": "bool",
+                "default": true,
+                "description": "Facebook"
+            },
+            {
+                "key": "twitter",
+                "type": "bool",
+                "default": true,
+                "description": "Twitter"
+            },
+            {
+                "key": "google",
+                "type": "bool",
+                "default": true,
+                "description": "Google"
+            },
+            {
+                "key": "weibo",
+                "type": "bool",
+                "default": false,
+                "description": "Weibo"
+            },
+            {
+                "key": "instapaper",
+                "type": "bool",
+                "default": false,
+                "description": "Instapaper"
+            },
+            {
+                "key": "vk",
+                "type": "bool",
+                "default": false,
+                "description": "VK"
+            }
+        ]
     }
 }
