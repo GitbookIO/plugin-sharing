@@ -53,18 +53,7 @@ require(["gitbook", "lodash"], function(gitbook, _) {
 
 
     gitbook.events.bind("start", function(e, config) {
-        var opts = _.defaults(config.sharing, {
-            "facebook": true,
-            "twitter": true,
-            "google": false,
-            "weibo": false,
-            "instapaper": false,
-            "vk": false,
-            "all": [
-                "facebook", "google", "twitter",
-                "weibo", "instapaper"
-            ]
-        });
+        var opts = config.sharing;
 
         // Create dropdown menu
         var menu = _.chain(opts.all)

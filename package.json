@@ -19,43 +19,45 @@
         "url": "https://github.com/GitbookIO/plugin-sharing/issues"
     },
     "gitbook": {
-        "config": [
-            {
-                "key": "facebook",
-                "type": "bool",
+        "properties": {
+            "facebook": {
+                "type": "boolean",
                 "default": true,
-                "description": "Facebook"
+                "title": "Facebook"
             },
-            {
-                "key": "twitter",
-                "type": "bool",
+            "twitter": {
+                "type": "boolean",
                 "default": true,
-                "description": "Twitter"
+                "title": "Twitter"
             },
-            {
-                "key": "google",
-                "type": "bool",
-                "default": true,
-                "description": "Google"
+            "google": {
+                "type": "boolean",
+                "default": false,
+                "title": "Google"
             },
-            {
-                "key": "weibo",
-                "type": "bool",
+            "weibo": {
+                "type": "boolean",
                 "default": false,
                 "description": "Weibo"
             },
-            {
-                "key": "instapaper",
-                "type": "bool",
+            "instapaper": {
+                "type": "boolean",
                 "default": false,
                 "description": "Instapaper"
             },
-            {
-                "key": "vk",
-                "type": "bool",
+            "vk": {
+                "type": "boolean",
                 "default": false,
                 "description": "VK"
+            },
+            "all": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "default": ["facebook", "google", "twitter", "weibo", "instapaper"],
+                "uniqueItems": true
             }
-        ]
+        }
     }
 }
