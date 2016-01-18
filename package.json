@@ -50,12 +50,17 @@
                 "default": false,
                 "description": "VK"
             },
+            "qzone": {
+                "type": "boolean",
+                "default": false,
+                "description": "Qzone"
+            },
             "all": {
                 "type": "array",
                 "items": {
                     "type": "string"
                 },
-                "default": ["facebook", "google", "twitter", "weibo", "instapaper"],
+                "default": ["facebook", "google", "twitter", "weibo", "instapaper", "qzone"],
                 "uniqueItems": true
             }
         }

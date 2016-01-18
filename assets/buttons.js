@@ -47,6 +47,14 @@ require(["gitbook", "lodash"], function(gitbook, _) {
                 e.preventDefault();
                 window.open("http://vkontakte.ru/share.php?url="+encodeURIComponent(location.href));
             }
+        },
+        'qzone': {
+            'label': 'Qzone',
+            'icon': 'fa fa-qq',
+            'onClick': function(e){
+                e.preventDefault();
+                window.open("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+encodeURIComponent(location.href));
+            }
         }
     };
 
