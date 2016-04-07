@@ -77,7 +77,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         }
 
         // Direct actions to share
-        $.each(SITES, function(site, sideId) {
+        $.each(SITES, function(sideId, site) {
             if (!opts[sideId]) return;
 
             gitbook.toolbar.createButton({
