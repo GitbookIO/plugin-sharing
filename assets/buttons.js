@@ -56,15 +56,14 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         var opts = config.sharing;
 
         // Create dropdown menu
-        var menu = $.map(opts.all,
-            function(id) {
-                var site = SITES[id];
+        var menu = opts.all.map(function(id) {
+            var site = SITES[id];
 
-                return {
-                    text: site.label,
-                    onClick: site.onClick
-                };
-            });
+            return {
+                text: site.label,
+                onClick: site.onClick
+            };
+        });
 
         // Create main button with dropdown
         if (menu.length > 0) {
