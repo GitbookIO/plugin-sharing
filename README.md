@@ -22,18 +22,28 @@ Default configuration is:
 {
     "pluginsConfig": {
         "sharing": {
+            "douban": false,
             "facebook": true,
-            "twitter": true,
             "google": false,
-            "weibo": false,
             "instapaper": false,
+            "line": false,
+            "linkedin": true,
+            "messenger": false,
+            "pocket": true,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": true,
+            "viber": false,
             "vk": false,
+            "weibo": false,
+            "whatsapp": false,
             "all": [
                 "facebook", "google", "twitter",
-                "weibo", "instapaper"
+                "weibo", "instapaper", "linkedin",
+                "pocket", "stumbleupon"
             ]
         }
     }
 }
 ```
-
