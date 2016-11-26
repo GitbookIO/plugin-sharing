@@ -1,56 +1,26 @@
 require(['gitbook', 'jquery'], function(gitbook, $) {
+    function site(label, icon, link) {
+        return {
+            label: label,
+            icon: 'fa fa-' + icon,
+            onClick: function (e) {
+                e.preventDefault();
+                window.open(link);
+            }
+        };
+    }
+
+    var url = encodeURIComponent(location.href);
+    var title = encodeURIComponent(document.title);
+
     var SITES = {
-        'facebook': {
-            'label': 'Facebook',
-            'icon': 'fa fa-facebook',
-            'onClick': function(e) {
-                e.preventDefault();
-                window.open('http://www.facebook.com/sharer/sharer.php?s=100&p[url]='+encodeURIComponent(location.href));
-            }
-        },
-        'twitter': {
-            'label': 'Twitter',
-            'icon': 'fa fa-twitter',
-            'onClick': function(e) {
-                e.preventDefault();
-                window.open('http://twitter.com/home?status='+encodeURIComponent(document.title+' '+location.href));
-            }
-        },
-        'google': {
-            'label': 'Google+',
-            'icon': 'fa fa-google-plus',
-            'onClick': function(e) {
-                e.preventDefault();
-                window.open('https://plus.google.com/share?url='+encodeURIComponent(location.href));
-            }
-        },
-        'weibo': {
-            'label': 'Weibo',
-            'icon': 'fa fa-weibo',
-            'onClick': function(e) {
-                e.preventDefault();
-                window.open('http://service.weibo.com/share/share.php?content=utf-8&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title));
-            }
-        },
-        'instapaper': {
-            'label': 'Instapaper',
-            'icon': 'fa fa-instapaper',
-            'onClick': function(e) {
-                e.preventDefault();
-                window.open('http://www.instapaper.com/text?u='+encodeURIComponent(location.href));
-            }
-        },
-        'vk': {
-            'label': 'VK',
-            'icon': 'fa fa-vk',
-            'onClick': function(e) {
-                e.preventDefault();
-                window.open('http://vkontakte.ru/share.php?url='+encodeURIComponent(location.href));
-            }
-        }
+        facebook: site('Facebook', 'facebook', 'http://www.facebook.com/sharer/sharer.php?s=100&p[url]=' + url),
+        instapaper: site('instapaper', 'instapaper', 'http://www.instapaper.com/text?u=' + url),
+        google: site('Google+', 'google-plus', 'https://plus.google.com/share?url=' + url),
+        twitter: site('Twitter', 'twitter', 'http://twitter.com/home?status=' + encodeURIComponent(document.title + ' ' + location.href)),
+        vk: site('VK', 'vk', 'http://vkontakte.ru/share.php?url=' + url),
+        weibo: site('Weibo', 'weibo', 'http://service.weibo.com/share/share.php?content=utf-8&url=' + url + '&title=' + title)
     };
-
-
 
     gitbook.events.bind('start', function(e, config) {
         var opts = config.sharing;
