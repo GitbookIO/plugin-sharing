@@ -22,6 +22,7 @@ Default configuration is:
 {
     "pluginsConfig": {
         "sharing": {
+            "douban": false,
             "facebook": true,
             "google": false,
             "instapaper": false,
@@ -29,6 +30,8 @@ Default configuration is:
             "linkedin": true,
             "messenger": false,
             "pocket": true,
+            "qq": false,
+            "qzone": false,
             "stumbleupon": false,
             "twitter": true,
             "viber": false,

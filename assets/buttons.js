@@ -14,6 +14,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     var title = encodeURIComponent(document.title);
 
     var SITES = {
+        douban: site('豆瓣', 'share', 'http://shuo.douban.com/!service/share?href=' + url + '&name=' + title),
         facebook: site('Facebook', 'facebook', 'http://www.facebook.com/sharer/sharer.php?s=100&p[url]=' + url),
         google: site('Google+', 'google-plus', 'https://plus.google.com/share?url=' + url),
         instapaper: site('instapaper', 'instapaper', 'http://www.instapaper.com/text?u=' + url),
@@ -21,11 +22,13 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         linkedin: site('Linkedin', 'linkedin', 'https://www.linkedin.com/shareArticle?mini=true&url=' + url),
         messenger: site('Facebook Messenger', 'commenting', 'fb-messenger://share?link=' + url),
         pocket: site('Pocket', 'get-pocket', 'https://getpocket.com/save?url=' + url + '&title=' + title),
+        qq: site('QQ', 'qq', 'http://connect.qq.com/widget/shareqq/index.html?url=' + url + '&title=' + title),
+        qzone: site('QQ空间', 'star', 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + url + '&title=' + title),
         stumbleupon: site('StumbleUpon', 'stumbleupon', 'http://www.stumbleupon.com/submit?url=' + url + '&title=' + title),
         twitter: site('Twitter', 'twitter', 'https://twitter.com/intent/tweet?url=' + title + '&text=' + title),
         viber: site('Viber', 'volume-control-phone', 'viber://forward?text='+ url + ' ' + title),
         vk: site('VK', 'vk', 'http://vkontakte.ru/share.php?url=' + url),
-        weibo: site('Weibo', 'weibo', 'http://service.weibo.com/share/share.php?content=utf-8&url=' + url + '&title=' + title),
+        weibo: site('新浪微博', 'weibo', 'http://service.weibo.com/share/share.php?content=utf-8&url=' + url + '&title=' + title),
         whatsapp: site('WhatsApp', 'whatsapp', 'whatsapp://send?text='+ url + ' ' + title),
     };
 

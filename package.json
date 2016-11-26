@@ -20,6 +20,11 @@
   },
   "gitbook": {
     "properties": {
+      "douban": {
+        "type": "boolean",
+        "default": false,
+        "title": "豆瓣"
+      },
       "facebook": {
         "type": "boolean",
         "default": true,
@@ -54,6 +59,16 @@
         "type": "boolean",
         "default": true,
         "description": "Pocket"
+      },
+      "qq": {
+        "type": "boolean",
+        "default": false,
+        "description": "QQ"
+      },
+      "qzone": {
+        "type": "boolean",
+        "default": false,
+        "description": "QQ空间"
       },
       "stumbleupon": {
         "type": "boolean",
@@ -94,7 +109,6 @@
           "facebook",
           "google",
           "twitter",
-          "weibo",
           "instapaper",
           "linkedin",
           "pocket",
