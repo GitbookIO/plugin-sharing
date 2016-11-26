@@ -25,30 +25,65 @@
         "default": true,
         "title": "Facebook"
       },
-      "twitter": {
-        "type": "boolean",
-        "default": true,
-        "title": "Twitter"
-      },
       "google": {
         "type": "boolean",
         "default": false,
         "title": "Google"
-      },
-      "weibo": {
-        "type": "boolean",
-        "default": false,
-        "description": "Weibo"
       },
       "instapaper": {
         "type": "boolean",
         "default": false,
         "description": "Instapaper"
       },
+      "line": {
+        "type": "boolean",
+        "default": false,
+        "description": "LINE"
+      },
+      "linkedin": {
+        "type": "boolean",
+        "default": false,
+        "description": "Linkedin"
+      },
+      "messenger": {
+        "type": "boolean",
+        "default": false,
+        "description": "Facebook Messenger"
+      },
+      "pocket": {
+        "type": "boolean",
+        "default": true,
+        "description": "Pocket"
+      },
+      "stumbleupon": {
+        "type": "boolean",
+        "default": false,
+        "description": "StumbleUpon"
+      },
+      "twitter": {
+        "type": "boolean",
+        "default": true,
+        "title": "Twitter"
+      },
+      "viber": {
+        "type": "boolean",
+        "default": false,
+        "description": "Viber"
+      },
       "vk": {
         "type": "boolean",
         "default": false,
         "description": "VK"
+      },
+      "weibo": {
+        "type": "boolean",
+        "default": false,
+        "description": "新浪微博"
+      },
+      "whatsapp": {
+        "type": "boolean",
+        "default": false,
+        "description": "WhatsApp"
       },
       "all": {
         "type": "array",
@@ -60,7 +95,10 @@
           "google",
           "twitter",
           "weibo",
-          "instapaper"
+          "instapaper",
+          "linkedin",
+          "pocket",
+          "stumbleupon"
         ],
         "uniqueItems": true
       }

@@ -15,11 +15,18 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     var SITES = {
         facebook: site('Facebook', 'facebook', 'http://www.facebook.com/sharer/sharer.php?s=100&p[url]=' + url),
-        instapaper: site('instapaper', 'instapaper', 'http://www.instapaper.com/text?u=' + url),
         google: site('Google+', 'google-plus', 'https://plus.google.com/share?url=' + url),
+        instapaper: site('instapaper', 'instapaper', 'http://www.instapaper.com/text?u=' + url),
+        line: site('LINE', 'comment', 'http://line.me/R/msg/text/?' + title + ' ' + url),
+        linkedin: site('Linkedin', 'linkedin', 'https://www.linkedin.com/shareArticle?mini=true&url=' + url),
+        messenger: site('Facebook Messenger', 'commenting', 'fb-messenger://share?link=' + url),
+        pocket: site('Pocket', 'get-pocket', 'https://getpocket.com/save?url=' + url + '&title=' + title),
+        stumbleupon: site('StumbleUpon', 'stumbleupon', 'http://www.stumbleupon.com/submit?url=' + url + '&title=' + title),
         twitter: site('Twitter', 'twitter', 'https://twitter.com/intent/tweet?url=' + title + '&text=' + title),
+        viber: site('Viber', 'volume-control-phone', 'viber://forward?text='+ url + ' ' + title),
         vk: site('VK', 'vk', 'http://vkontakte.ru/share.php?url=' + url),
-        weibo: site('Weibo', 'weibo', 'http://service.weibo.com/share/share.php?content=utf-8&url=' + url + '&title=' + title)
+        weibo: site('Weibo', 'weibo', 'http://service.weibo.com/share/share.php?content=utf-8&url=' + url + '&title=' + title),
+        whatsapp: site('WhatsApp', 'whatsapp', 'whatsapp://send?text='+ url + ' ' + title),
     };
 
     gitbook.events.bind('start', function(e, config) {
