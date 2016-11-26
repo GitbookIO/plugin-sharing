@@ -17,7 +17,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         facebook: site('Facebook', 'facebook', 'http://www.facebook.com/sharer/sharer.php?s=100&p[url]=' + url),
         instapaper: site('instapaper', 'instapaper', 'http://www.instapaper.com/text?u=' + url),
         google: site('Google+', 'google-plus', 'https://plus.google.com/share?url=' + url),
-        twitter: site('Twitter', 'twitter', 'http://twitter.com/home?status=' + encodeURIComponent(document.title + ' ' + location.href)),
+        twitter: site('Twitter', 'twitter', 'https://twitter.com/intent/tweet?url=' + title + '&text=' + title),
         vk: site('VK', 'vk', 'http://vkontakte.ru/share.php?url=' + url),
         weibo: site('Weibo', 'weibo', 'http://service.weibo.com/share/share.php?content=utf-8&url=' + url + '&title=' + title)
     };
