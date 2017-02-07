@@ -48,6 +48,14 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 window.open('http://vkontakte.ru/share.php?url='+encodeURIComponent(location.href));
             }
         }
+        'linkedin': {
+            'label': 'LK',
+            'icon': 'fa fa-linkedin',
+            'onClick': function(e) {
+                e.preventDefault();
+                window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href));
+            }
+        }
     };
 
 
