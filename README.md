@@ -28,6 +28,7 @@ Default configuration is:
             "weibo": false,
             "instapaper": false,
             "vk": false,
+            "linkedin": false,
             "all": [
                 "facebook", "google", "twitter",
                 "weibo", "instapaper"
