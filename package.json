@@ -50,6 +50,11 @@
         "default": false,
         "description": "VK"
       },
+      "linkedin": {
+        "type": "boolean",
+        "default": false,
+        "description": "Linkedin"
+      },
       "all": {
         "type": "array",
         "items": {
